@@ -14,7 +14,7 @@
 #Example: Displayed string when monitor on: DVI-I-2 connected 1280x1024+0+0
 #         .. grep "DVI-I-2 connected 1280x1024+0+0" > ..
 
-if (xrandr | grep "DVI-I-2 connected 1280x1024+0+0" > /dev/null)
+if (xrandr | grep "Monitor string when on" > /dev/null)
 then
 	exec xrandr --output DVI-I-2 --off &
 else
