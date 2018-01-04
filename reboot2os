@@ -1,0 +1,24 @@
+﻿#!/bin/bash
+#-------------------------------------------------------
+#
+# A simple command script to reboot into a secondary OS.
+# Author: Herman Lundberg
+# Date:   January 4th 2018
+#
+# Tips:
+# The path to the right command folders might need to be
+# included. Mine shell script could not find grub-reboot.
+#
+# The name of the target operating system can be found
+# inside /boot/grub/grub.cfg
+#
+# By setting the ownership to root and the script only
+# executable by root the command can only be run by sudo,
+# or likewise, which is needed for grub-reboot. Makes it
+# impossible to forget sudo and run the command without
+# the boot order changed.
+#-------------------------------------------------------
+
+PATH="path/to/commands:/path/to/more/commands"
+grub-reboot 'Ubuntu'
+reboot
