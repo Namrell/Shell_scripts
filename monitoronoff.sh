@@ -9,7 +9,7 @@
 # Run xrandr when the secondary monitor is off and notice the difference in output text
 # Copy and paste the text string that is only visible when the monitor is on inside the
 # quotation marks after grep.
-#----------------------------------------------------------
+#-----------------------------------------------------------
 
 #Example: Displayed string when monitor on: DVI-I-2 connected 1280x1024+0+0
 #         .. grep "DVI-I-2 connected 1280x1024+0+0" > ..
